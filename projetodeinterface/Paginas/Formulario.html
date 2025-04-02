@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv=" "X-UA-Compartilhe>
+    <title> Formulário de Inscrição</title>
+</head>
+<body>
+    <a href="../index.html" Target="_blank">
+        Acesse a página principal clicando aqui👈🏿
+    </a>
+<br>
+<br>
+<!--Formulário-->
+    <h2 align=" center">Formulário de Inscrição</h2>
+    <form action="arquivo.sql" method="post">
+        <p>Nome: <input type="text" name="nome" placeholder="Escreva seu nome" size=" 60"/></p>
+
+        <p>Telefone: <input type="tel" placeholder="(00) 0.0000-0000" maxlength="11"/></p>
+
+        <p>Data de Nascimento: <input type="date"/></p>
+
+        <p>Senha: <input type="password" maxlength="8"/> 
+            <small> A senha só poderá ter até 8 caracteres</small></p>
+
+        <p>Email: <input type="email"/></p>
+
+        <p>Idade: <input type="number"/></p>
+
+    Comentários:
+    <textarea rows="20" cols="30"></textarea>
+    <!--Estrutura de Opções-->
+        <p>Projetos Educacionais:
+            <select>
+                <option value="escoladecampeões">Escola de Campeões </option>
+                <option value="bancodosaber">Banco do Saber</option>
+                <option value="escolanota10">Escola Nota 10</option>
+                <option value="gincanasescolares">Gincanas Escolares</option>
+                <option value="cienciasem3d">Ciências em 3D</option>
+            </select>
+        </p>
+<br>
+<br>
+        <!-- Estrutura de Opções-->
+        <p> Escolas
+            <br>
+            <input type="radio" name="Escolas" value="">Luigi Risso
+            <br>
+            <input type="radio" name="Escolas" value="">Inah Rêgo
+            <br>
+            <input type="radio" name="Escolas" value="">Beckman
+            <br>
+            <input type="radio" name="Escolas" value="">Emídia Pereira
+            <br>
+        </p>
+        <!--CheckBox-->
+        <p>
+            <input type="checkbox" name="Confirmar">
+            Aceito os termos!
+        </p>
+            <input type="reset">
+            <input type="submit">
+<br>
+<br>
+<br>
+        <!--Fieldset-->
+            <fieldset>
+            <legend align="center">Dados Pessoais</legend>
+            <label>Nome:<input type="text"></label>
+            <label>CPF:<input type="text"></label>
+            </fieldset>
+    </form>
+</body>
+
+</html>

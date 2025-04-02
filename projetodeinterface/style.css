@@ -1,0 +1,28 @@
+.logo {
+    display: block;
+    margin: auto;
+    width: 50%;
+    max-width: 200px;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:#cef7ff;
+    margin: 20px;
+}
+.content {
+    text-align: justify;
+    margin: auto;
+}
+pre {
+    background-color: #ffffff;
+    padding: 10px;
+    overflow-x: auto;
+}
+hr {
+    margin: 20px 0;
+}
+/*Estrutura do Menu*/
+#bodyindex{
+    background-color: aqua;
+    text-align: left
+}
