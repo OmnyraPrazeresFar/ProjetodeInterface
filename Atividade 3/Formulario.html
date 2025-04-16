@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="index.html" target="_blank">Acesse a página principal clicando aqui 👈🏿</a>
+
+    <h2 class="titulo">Formulário de Inscrição</h2>
+
+    <form action="arquivo.sql" method="post">
+        
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            
+            <label>Nome: <input type="text" name="nome" placeholder="Escreva seu nome" required></label><br><br>
+
+            <label>Telefone: <input type="tel" name="telefone" placeholder="(00) 0.0000-0000" maxlength="11" required></label><br><br>
+
+            <label>Data de Nascimento: <input type="date" name="nascimento" required></label><br><br>
+
+            <label>Email: <input type="email" name="email" required></label><br><br>
+
+            <label>CPF: <input type="text" name="cpf" maxlength="14" placeholder="000.000.000-00" required></label><br><br>
+
+            <label>Senha: <input type="password" name="senha" maxlength="8" required></label>
+            <small> (Até 8 caracteres)</small><br><br>
+
+            <label>Idade: <input type="number" name="idade" min="0" max="120" required></label><br><br>
+
+            <label>Comentários:</label><br>
+            <textarea name="comentarios" rows="5" cols="40" placeholder="Deixe seu comentário aqui..."></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Projetos Educacionais</legend>
+            
+            <label>Selecione um projeto:</label>
+            <select name="projetos" required>
+                <option value="">--Escolha um projeto--</option>
+                <option value="escoladecampeoes">Escola de Campeões</option>
+                <option value="bancodosaber">Banco do Saber</option>
+                <option value="escolanota10">Escola Nota 10</option>
+                <option value="gincanasescolares">Gincanas Escolares</option>
+                <option value="cienciasem3d">Ciências em 3D</option>
+            </select><br><br>
+
+            <label>Área de Interesse:</label><br>
+            <input type="checkbox" name="area[]" value="ciencia" required> Ciência<br>
+            <input type="checkbox" name="area[]" value="tecnologia"> Tecnologia<br>
+            <input type="checkbox" name="area[]" value="engenharia"> Engenharia<br>
+            <input type="checkbox" name="area[]" value="matematica"> Matemática<br>
+            <input type="checkbox" name="area[]" value="artes"> Artes<br><br>
+
+            <label>Escolha sua escola:</label><br>
+            <input type="radio" name="escola" value="luigi" required> Luigi Risso<br>
+            <input type="radio" name="escola" value="inah"> Inah Rêgo<br>
+            <input type="radio" name="escola" value="beckman"> Beckman<br>
+            <input type="radio" name="escola" value="emidia"> Emídia Pereira<br><br>
+
+            <label>Turno:</label><br>
+            <input type="radio" name="turno" value="manha" required> Manhã<br>
+            <input type="radio" name="turno" value="tarde"> Tarde<br>
+            <input type="radio" name="turno" value="noite"> Noite<br><br>
+
+            <label>Modalidade de ensino:</label><br>
+            <input type="radio" name="modalidade" value="presencial" required> Presencial<br>
+            <input type="radio" name="modalidade" value="online"> Online<br><br>
+
+            <input type="checkbox" name="termos" required> Aceito os termos!<br><br>
+
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
